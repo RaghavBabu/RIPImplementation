@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Routers>
+	<!-- Network topo 1  -->
+ 
+ 	<Router Name ="A" IPAddress = "129.21.22.196/255.255.255.0" >
+    	<LinkRouter Name = "B" cost = "28" />
+    	<LinkRouter Name = "C" cost = "14" />
+	</Router>
+	<Router Name ="B" IPAddress = "129.21.30.37/255.255.255.0" >
+	    <LinkRouter Name = "A" cost = "28" />
+    	<LinkRouter Name = "D" cost = "5" />
+    </Router>
+	<Router Name ="C" IPAddress = "129.21.34.80/255.255.255.0">
+    	<LinkRouter Name = "A" cost = "14" />
+    	<LinkRouter Name = "D" cost = "6" />
+	</Router>
+	<Router Name ="D" IPAddress = "129.21.37.49/255.255.255.0">
+    	<LinkRouter Name = "C" cost = "6" />
+    	<LinkRouter Name = "B" cost = "5" />
+	</Router>
+	
+	<!--  Network topo 2 -->
+	<!-- <Router Name ="A" IPAddress = "129.21.22.196/255.255.255.0" >
+    	<LinkRouter Name = "C" cost = "15" />
+    	<LinkRouter Name = "D" cost = "10" />
+	</Router>
+	<Router Name ="B" IPAddress = "129.21.30.37/255.255.255.0" >
+	    <LinkRouter Name = "C" cost = "5" />
+    	<LinkRouter Name = "D" cost = "6" />
+    </Router>
+	<Router Name ="C" IPAddress = "129.21.34.80/255.255.255.0">
+    	<LinkRouter Name = "A" cost = "15" />
+    	<LinkRouter Name = "B" cost = "5"  />
+    	<LinkRouter Name = "D" cost = "25" />
+	</Router>
+	<Router Name ="D" IPAddress = "129.21.37.49/255.255.255.0">
+    	<LinkRouter Name = "A" cost = "10" />
+    	<LinkRouter Name = "B" cost = "6" />
+    	<LinkRouter Name = "C" cost = "25" />
+	</Router> -->
+	
+	<!--  Network topo 2 -->
+	<!--  
+	<Router Name ="A" IPAddress = "129.21.22.196/255.255.255.0" >
+    	<LinkRouter Name = "B" cost = "3" />
+    	<LinkRouter Name = "C" cost = "23" />
+	</Router>
+	<Router Name ="B" IPAddress = "129.21.30.37/255.255.255.0" >
+	    <LinkRouter Name = "A" cost = "3" />
+    	<LinkRouter Name = "C" cost = "2" />
+    </Router>
+	<Router Name ="C" IPAddress = "129.21.34.80/255.255.255.0">
+    	<LinkRouter Name = "A" cost = "23" />
+    	<LinkRouter Name = "B" cost = "2"  />
+    	<LinkRouter Name = "D" cost = "5" />
+	</Router>
+	<Router Name ="D" IPAddress = "129.21.37.49/255.255.255.0">
+    	<LinkRouter Name = "C" cost = "5" />
+	</Router> -->
+</Routers>
